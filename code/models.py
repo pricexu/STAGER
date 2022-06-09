@@ -159,7 +159,7 @@ class GCN_Encoder(nn.Module):
 
 class Weight_Assigner(nn.Module):
 	def __init__(self, nhid, nclass, adj, dropout=0.5, topk=16):
-		super(Weight_Distributer_new, self).__init__()
+		super(Weight_Assigner, self).__init__()
 		self.adj = adj
 		self.degree = 6
 		self.fc1 = nn.Linear(topk, nhid)
