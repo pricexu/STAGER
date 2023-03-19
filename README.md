@@ -14,3 +14,33 @@ For baseline methods, we adopt the public resources of GPN (https://github.com/k
 
 ## Running
 train_STAGER.py is the entry of the code.
+
+## Reference
+If you find this repository useful, please kindly cite the following paper:
+
+
+```
+@inproceedings{DBLP:conf/icdm/XuDW0T22,
+  author    = {Zhe Xu and
+               Kaize Ding and
+               Yu{-}Xiong Wang and
+               Huan Liu and
+               Hanghang Tong},
+  editor    = {Xingquan Zhu and
+               Sanjay Ranka and
+               My T. Thai and
+               Takashi Washio and
+               Xindong Wu},
+  title     = {Generalized Few-Shot Node Classification},
+  booktitle = {{IEEE} International Conference on Data Mining, {ICDM} 2022, Orlando,
+               FL, USA, November 28 - Dec. 1, 2022},
+  pages     = {608--617},
+  publisher = {{IEEE}},
+  year      = {2022},
+  url       = {https://doi.org/10.1109/ICDM54844.2022.00071},
+  doi       = {10.1109/ICDM54844.2022.00071},
+  timestamp = {Thu, 02 Feb 2023 14:29:00 +0100},
+  biburl    = {https://dblp.org/rec/conf/icdm/XuDW0T22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
