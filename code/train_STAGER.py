@@ -35,7 +35,7 @@ parser.add_argument('--episodes', type=int, default=11,
 parser.add_argument('--dropout', type=float, default=0.5,
 					help='Dropout rate (1 - keep probability).')
 parser.add_argument('--sample_weight', type=float, default=100,
-					help='Dropout rate (1 - keep probability).')
+					help='The sample reweighting for the novel classes.')
 
 
 args = parser.parse_args()
@@ -233,7 +233,7 @@ if __name__ == "__main__":
 				sample_weight_train = []
 				for i in range(n_class):
 					if i in pseudo_novel_classes:
-						# also sample rewighting for during the imbalanced episodic training
+						# also sample rewighting during the imbalanced episodic training
 						sample_weight_train.append(40/k_shot)
 					else:
 						sample_weight_train.append(1)
